@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Logica de Programação Javascript</title>
+        <meta charset="utf_8">
+    </head>
+
+    <body>
+
+        <h1>Logica de programação Javascript</h1>
+
+        <div id="output"></div>
+
+    </body>    
+
+    <script>
+
+          //mostrar o nome de todos os alunos, as respectivas notas e a media
+        // anual de cada aluno, e a media de todos os alunos. 
+
+        var msg = "";
+        var totalMediaGeral= 0;
+
+    
+        var alunos = [
+            {nome: 'maria', notas: [2,5,8,9]},
+            {nome: 'jose', notas: [2,1,5,8]},
+            {nome: 'joão', notas: [1,5,3,2]},
+            {nome: 'ana', notas: [4,5,3,8]},
+            {nome: 'lucia', notas: [2,1,8,5]},
+           
+        ];
+
+        //acessa o arrey maior
+        for(var i = 0; i < alunos.length; i++){
+            console.log(alunos[i])
+
+            //mostrar o nome de todos os alunos
+            msg += '<p> notas do(a) aluno(a): ' + alunos[i].nome +' </p>'
+
+            //mostrar notas de cada aluno
+            var totalNotas = 0;
+            for(var j = 0; j < alunos[i].notas.length; j++){
+                console.log(alunos[i].notas[j])
+                
+                msg += '<p> Nota '  + (j+1) + ': ' + alunos[i].notas[j] +' </p>'
+
+                //soma de todas as notas do aluno
+                totalNotas += alunos[i].notas[j];
+            }
+
+            //media de cada aluno
+            mediaAluno = totalNotas / alunos[i].notas.length
+            msg += '<p> media anual ' + mediaAluno + '<hr>'
+            totalMediaGeral += mediaAluno;     
+        }
+
+        //media de todos os alunos. 
+        
+        totalMediaGeral = totalMediaGeral / alunos.length
+        msg += '<p> A media de todos os alunos é ' + totalMediaGeral + '<hr>'
+
+        document.querySelector('#output').innerHTML = msg;
+    </script>
+    
+</html>

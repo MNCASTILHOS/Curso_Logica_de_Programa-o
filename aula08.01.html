@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Logica de Programação Javascript</title>
+        <meta charset="utf_8">
+    </head>
+    <body>
+        <h1>Logica de programação Javascript</h1>
+
+        <script>
+        
+        function dizBla(n){
+            return (n > 1) ? dizBla(--n) + 'bla' : 'bla';
+        }
+
+        console.log(dizBla(2)) //bla bla
+        console.log(dizBla(5)) //bla bla bla bla bla
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Logica de Programação Javascript</title>
+        <meta charset="utf_8">
+    </head>
+    <body>
+        <h1>Logica de programação Javascript</h1>
+
+        <button onclick="mostrarSoma()">+</button>
+        <button onclick="mostrarSubtracao()">-</button>
+        <button onclick="mostrarMultiplicacao()">*</button>
+        <button onclick="mostrarDivisao()">/</button>
+
+        <div id="output"></div>
+
+        <script>
+            //pedir um numero para o usuario
+            var n1 = prompt('digite um numero');
+            n1 = parseFloat(n1);
+
+            //criar função para soma
+            function mostrarSoma() {
+
+                var n2 = prompt('digite um numero');
+                n2 = parseFloat(n2);
+
+                var resultado = n1 + n2 
+                mensagem += resultado;
+
+                output.innerHTML = mensagem;
+            }
+
+            //criar função de subtração
+            function mostrarSubtracao() {
+
+                var n2 = prompt('digite um numero');
+                n2 = parseFloat(n2);
+
+                var resultado = n1 + n2 
+                mensagem += resultado;
+
+                output.innerHTML = mensagem;
+            }
+
+            //criar função multiplicação
+            function mostrarMultiplicacao() {
+
+                var n2 = prompt('digite um numero');
+                n2 = parseFloat(n2);
+
+                var resultado = n1 + n2 
+                mensagem += resultado;
+
+                output.innerHTML = mensagem;
+                }
+            
+            //criar função multiplicação
+            function mostrarDivisao() {
+
+                var n2 = prompt('digite um numero');
+                n2 = parseFloat(n2);
+
+                var resultado = n1 + n2 
+                mensagem += resultado;
+
+                output.innerHTML = mensagem;
+                }
+
+            var output = document.querySelector("#output");
+
+            var mensagem = "o resultado é ";
+
+
+        </script>
+        <script>
+
+
+        </script>
+    </body>
+</html>
